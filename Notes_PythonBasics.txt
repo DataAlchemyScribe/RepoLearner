@@ -1,0 +1,104 @@
+Order of Operation --
+=> PEMDAS - Parentheses, Exponents, Multiplication/Division, Addition/Substraction
+
+Basic Arithmetic operators --
+=> + , - , * , / , //, % , **
+
+help() -- brief about built-in functions
+=> e.g. help(round), help(print),...
+
+Note: (Docstring) you can also use help() for user-defined functions brief by providing a """ brief """ inside the user-defined function.
+
+e.g. 
+#Code
+def least_difference(a, b, c):
+    """Return the smallest difference between any two numbers
+    among a, b and c.
+    
+    >>> least_difference(1, 5, -5)
+    4
+    """
+    diff1 = abs(a - b)
+    diff2 = abs(b - c)
+    diff3 = abs(a - c)
+    return min(diff1, diff2, diff3)
+
+#Input
+help(least_difference)
+
+#Output
+Help on function least_difference in module __main__:
+
+least_difference(a, b, c)
+    Return the smallest difference between any two numbers
+    among a, b and c.
+    
+    >>> least_difference(1, 5, -5)
+    4
+
+Higher-Order Functions --
+=> Functions that operate on onther functions
+*************************************************************************
+
+Order of Precedence for Boolean Operators --
+=> not >> and >> or
+
+List -- []
+=> ordered sequences of values.
+=> able to contain different types of variables.
+=> Indexing is useful to access individual list elements. (starts from 0) 
+    Note: negative values refers from end of list
+=> Slicing - list_name['start point':'end point'] 
+    Note: this will return all list elements from start point and continuing to but not end point.
+=> lists are mutable (can be modified)
+=> List Functions:-
+    len() , sorted() , sum() , max() , min()
+=> List Methods:-
+    append() , pop() , index()
+
+Tuples -- ()
+=> almost similar to list.
+=> Tuples are immutable (cannot be modified).
+*************************************************************************
+
+Loops --
+=> for (variable) in (object that supports iteration):
+    ...
+
+=> range() -- for (variable) in range():
+                ...
+
+=> while (conditio):
+    ...
+
+List comprehensions -- 
+=> sqr = [n**2 for n in range(10)]
+   [0,1,4,9,16,25,36,49,64,81]
+
+--Monte Carlo Method
+*************************************************************************
+
+Strings --
+=> remember ' ' can have " " and vice-versa " " can have ' '.
+Note:- \ allows to have single quote (') inside the  single quoted string ' '.
+
+=> Single quote (' '), Double quote (" "), Triple quote (""" """)
+
+=> Strings -- sequence of characters.
+=> Strings are immutable (cannot be modified).
+
+String Methods --
+=> upper() , lower() , index() , startswith() , endswith() , split() , join() , format()
+*************************************************************************
+
+Dictionaries {} --
+=> built-in Python Data Structure - map keys to values
+=> access keys using []
+=> keys() , values() , items() -- Methods
+*************************************************************************
+
+These 3 tools will guide one to understand strange objects --
+=> type() - what is this thing?
+=> dir() - what can I do with it?
+=> help() - tell me more!
+*************************************************************************
